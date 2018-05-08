@@ -44,22 +44,13 @@
     <dependency>
         <artifactId>com.google</artifactId>
         <groupId>Ab</groupId>
+        <version>0.0.4.3</version>
         <scope>system</scope>
         <systemPath>${basedir}/lib/Ab.jar</systemPath>
     </dependency>
-
 
 </dependencies>
   
   
   
-  <dependencyManagement>
-  	<dependencies>
-  		<dependency>
-  			<groupId>Ab</groupId>
-  			<artifactId>com.google</artifactId>
-  			<version>0.0.4.2</version>
-  		</dependency>
-  	</dependencies>
-  </dependencyManagement>
 </project>

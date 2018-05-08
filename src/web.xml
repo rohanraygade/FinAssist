@@ -9,12 +9,4 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  <servlet>
-         <servlet-name>chatServlet</servlet-name>
-         <servlet-class>com.servlet.fintechchatbot</servlet-class>
-    </servlet>
-    <servlet-mapping>
-         <servlet-name>chatServlet</servlet-name>
-         <url-pattern>/chatServlet</url-pattern>
-    </servlet-mapping>
 </web-app>
