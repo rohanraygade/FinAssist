@@ -53,6 +53,8 @@
 	</div>
 <script>
 
+	//onclick button function is as follows:
+
 	function sendFunction() {
 
 	$.ajax({
