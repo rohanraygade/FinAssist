@@ -141,6 +141,7 @@ body{
 .chat .user-photo{
     width: 60px;
     height: 60px;
+    xbackground-image: url("./images/chatuser.png") !important;
     background: #ccc;
     border-radius: 50%;
     overflow: hidden;
@@ -241,6 +242,13 @@ body{
 
 }
 
+
+.chatphoto{
+	background-image: url("./images/chatuser.png") !important;
+	background-size: cover !important;
+	xbackground: #FFF !important;
+	
+}
 
 /*--- Media Queries --*/
 @media screen and (max-width: 900px) {

@@ -7,11 +7,11 @@
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
   	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-	<!-- <link href="css/animate.css" rel="stylesheet"/>
+	<link href="css/animate.css" rel="stylesheet"/>
 	<link href="css/waypoints.css" rel="stylesheet"/>
-	<!-- <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+	 <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
 	<script src="js/waypoints.js" type="text/javascript"></script>
-	<script src="js/script.js" type="text/javascript"></script> -->
+	<script src="js/script.js" type="text/javascript"></script>
 	<link href="https://fonts.googleapis.com/css?family=Crimson+Text:600" rel="stylesheet">
 </head>
 <body>
@@ -37,7 +37,7 @@
 	<div id="chatbotDisp"class="chatbox">
 		<div class="chatlogs">
 			<div class="chat friend">
-				<div class="user-photo" ></div>
+				<div class="user-photo chatphoto" ></div>
 				<p class="chat-message" id="chatbot">Hey, this is FinAssist!</p>
 			</div>
 			<div class="chat self">
@@ -86,7 +86,7 @@
 				newChatMessage1.innerHTML = response;
 				newDiv1.appendChild(newChatMessage1);
 				var newUserPhoto1 = document.createElement('div');
-				newUserPhoto1.className = 'user-photo';
+				newUserPhoto1.className = 'user-photo chatphoto';
 				newDiv1.appendChild(newUserPhoto1);
 				$('#innerHTML').val('');
 			},
