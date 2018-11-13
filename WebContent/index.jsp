@@ -20,7 +20,7 @@
 	<div class="inner">
 		<div class="content">
 			<section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0s">
-				<h1><b>FinAssist</b></h1>
+				<h1><b>FinAssist Team</b></h1>
 			</section>
 
 			<section id="landingBtn" class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay=".1s">
@@ -32,13 +32,13 @@
 	</div>
 
 <div class="chatTitle">
-	<h2 style="text-align: center;font-weight: bold;">FinAssist</h2>
+	<h2 style="text-align: center;font-weight: bold;">FinAssist Team</h2>
 </div>
 	<div id="chatbotDisp"class="chatbox">
 		<div class="chatlogs">
 			<div class="chat friend">
 				<div class="user-photo chatphoto" ></div>
-				<p class="chat-message" id="chatbot">Hey, this is FinAssist!</p>
+				<p class="chat-message" id="chatbot">Hey, this is FinAssist Team!</p>
 			</div>
 			<div class="chat self">
 				<div class="user-photo" ></div>
@@ -52,8 +52,6 @@
 		</div>
 	</div>
 <script>
-
-	//onclick button function is as follows:
 
 	function sendFunction() {
 

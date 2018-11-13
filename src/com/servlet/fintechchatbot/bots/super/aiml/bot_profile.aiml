@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
 <!-- File: bot_profile.aiml -->
-<!-- Author: Dr. Richard S. Wallace -->
+<!-- Author: FinAssist Team -->
 <!-- Last modified: February 20, 2013 -->
 <!--  -->
 <!-- This AIML file is part of the SUPER 0.0.4 chat bot knowledge base. -->
@@ -96,7 +96,7 @@
 </random></template>
 </category>
 <category><pattern>BOTMASTER</pattern>
-<template>I was created by Dr. Richard S. Wallace.</template>
+<template>I was created by FinAssist Team.</template>
 </category>
 <category><pattern>IQ</pattern>
 <template><random>

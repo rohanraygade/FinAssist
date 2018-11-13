@@ -1,295 +1,329 @@
-@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
-html,body{
+body{
     margin: 0;
     padding: 0;
-    height: 100%;
-
-    width: 100%;
-}
-
-body{
-    background: url("./images/back.jpg");
+    background: url(back.jpg);
     background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    overflow:hidden;
+
 }
 
-.intro{
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    background-image: url("./images/back.jpg");
-    background-repeat: no-repeat;
-    display: table;
-    top: 0;
-    background-size: cover;
+.chat-head h2
+{
+	padding:0 !important;
+}
+.loginbox{
+    width: 320px;
+    height: 420px;
+    background: #0f274c;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 40px;
+
 }
 
-.intro .inner{
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    max-width: none;
+.signupbox{
+    width: 320px;
+    height: 580px;
+    background: #0f274c;
+    color: #fff;
+    top: 58%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 40px;
+
 }
 
-.content{
-    max-width: 600px;
-    margin: 0 auto;
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px 0;
     text-align: center;
-    padding-bottom: 18%;
+    font-size: 22px;
+    
 }
-.chatTitle{
-    display: none;
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.signupbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.signupbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type = "text"], input[type = "password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.signupbox input[type = "text"], input[type = "password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.loginbox input[type = "submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.signupbox input[type = "submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.loginbox input[type = "submit"]:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;    
+}
+
+.signupbox input[type = "submit"]:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;    
+}
+
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+}
+
+.signupbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+}
+
+nav{
+    width: 100%;
+    background: #0f274c;
+
+}
+
+ul{
+    width: 80%;
+    margin: 0 auto;
     padding: 0;
 }
-.chatTitle h2{
-    font-family: 'Crimson Text', sans-serif;
 
-    font-size: 300%;
-    font-weight: 100;
-    color: #2c205e;
-    line-height: 20%;
-}
-.content h1{
-    font-family: 'Crimson Text', sans-serif;
-
-    font-size: 600%;
-    font-weight: 100;
-    color: #2c205e;
-    line-height: 70%;
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
 }
 
-.btn{
-    font-family: 'Montserrat',sans-serif;
-    font-size: 135%;
-    font-weight: 400;
-    color: #3a6168;
-    text-transform: uppercase;
+ul li:hover{
+    background: #ffc107;
+}
+
+ul li a{
+    color: #fff;
     text-decoration: none;
-    border: solid #3a6168;
-    padding: 10px 20px;
-    border-radius: 9px;
-    transition: all 0.5s;
-
 }
 
-.btn:hover{
-    color: #CBDFD6;
-    border: solid #cbdfd6 2px;
-
+.chat-box{
+	position: absolute;
+	right: 20px;
+	bottom: 0px;
+	background: white;
+	width: 300px;
+	border-radius: 5px 5px 0px 0px;
+}
+.chat-head{
+	width: inherit;
+	height: 45px;
+	background: #2c3e50;
+	border-radius: 5px 5px 0px 0px;
+}
+.chat-head h2{
+	color: white;
+	padding: 8px;
+	display: inline-block;
+}
+.chat-head img{
+	cursor: pointer;
+	float: right;
+	width: 25px;
+	margin: 10px;
+}
+.chat-body{
+	height: 355px;
+	width: inherit;
+	overflow: auto;
+	margin-bottom: 45px;
+}
+.chat-text{
+	position: fixed;
+	bottom: 0px;
+	height: 45px;
+	width: inherit;
+}
+.chat-text textarea{
+	width: inherit;
+	height: inherit; 
+	box-sizing: border-box;
+	border: 1px solid #bdc3c7;
+	padding: 10px;
+	resize: none;
+}
+.chat-text textarea:active, .chat-text textarea:focus, .chat-text textarea:hover{
+	border-color: royalblue;
+}
+.msg-send{
+	background: #2ecc71;
+}
+.msg-receive{
+	background: #3498db;
+}
+.msg-send, .msg-receive{
+	width: 200px;
+	height: auto;
+	padding: 5px 5px 5px 10px;
+	margin: 10px auto;
+	border-radius: 3px;
+	line-height: 30px;
+	position: relative;
+	color: white;
+	word-wrap: break-word;
+}
+.msg-receive:before{
+	content: '';
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border: 15px solid;
+	border-color: transparent #3498db transparent transparent;
+	left: -29px;
+	top: 7px;
+}
+.msg-send:after{
+	content: '';
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border: 15px solid;
+	border-color: transparent transparent transparent #2ecc71;
+	right: -29px;
+	top: 7px;
+}
+.msg-receive:hover, .msg-send:hover{
+	opacity: .9;
 }
 
-.enter-button{
-    opacity: 1;
-}
 
 
-.enter-button{
 
-    xopacity: 0;
-    transform: translate3d(0,-30px,0);
-}
 
-#chatbotDisp{
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    filter:alpha(opacity=70);
+    -moz-opacity:0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+    z-index: 100;
     display: none;
-}
-
-.chatbox{
-
-    xborder: solid ;
-    border-radius: 30px;
-    height: 600px;
-    width: 500px;
-    min-width: 390px;
-    background: #fff;
-    padding: 25px;
-    margin: 20px auto;
-    box-shadow: 0 3px #cccccc;
-}
-
-.sendButton{
-    border-radius: 30px !important;
-}
-
-.textArea{
-    border-radius: 30px !important;
-}
-
-.chatlogs{
-    padding: 10px;
+    }
+    .cnt223 a{
+    text-decoration: none;
+    }
+    .popup{
     width: 100%;
-    height: 450px;
-    xbackground: #eee;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    
-    xdisplay: block;
-
-}
-
-
-
-.chat{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    margin-bottom: 10px;
-    xbackground: #2c205e;
-
-}
-
-
-.chat .user-photo{
-    width: 60px;
-    height: 60px;
-    xbackground-image: url("./images/chatuser.png") !important;
-    background: #ccc;
-    border-radius: 50%;
-    overflow: hidden;
-
-}
-
-
-.chat .chat-message{
-    width: 70%;
-    padding: 15px;
-    margin: 5px 10px 0;
-    xbackground: #1ddced;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 20px;
-}
-
-.friend .chat-message{
-    background: #1adda4;
-    xfloat: left;
-}
-
-.self .chat-message{
-    background: #1ddced;
-    	order: -1;
-    	xfloat: right;
-}
-
-
-.chat-form{
-    margin-top: 20px;
-    display: flex;
-    align-items: flex-start;
-}
-
-.chat-form textarea{
-    background: #fbfbfb;
-    width: 75%;
-    height: 50px;
-    border: 2px solid #eee;
-    border-radius: 3px;
-    resize: none;
-    padding: 10px;
-    font-size: 18px;
-    color: #333;
-}
-
-.chat-form textarea:focus {
-    background: #fff;
-}
-
-
-.chat-form textarea::-webkit-scrollbar{
-    width: 10px;
-
-}
-
-.chat-form textarea::-webkit-scrollbar-thumb{
+    margin: 0 auto;
+    display: none;
+    position: fixed;
+    z-index: 101;
+    }
+    .cnt223{
+    min-width: 600px;
+    width: 600px;
+    min-height: 150px;
+    margin: 100px auto;
+    background: #f3f3f3;
+    position: relative;
+    z-index: 103;
+    padding: 15px 35px;
     border-radius: 5px;
-    background: rgba(0,0,0,.1);
-}
-
-
-
-
-.chatlogs::-webkit-scrollbar{
-    width: 10px;
-
-}
-
-.chatlogs::-webkit-scrollbar-thumb{
-    border-radius: 5px;
-    background: rgba(0,0,0,.1);
-}
-
-.chat-form button{
-    background: #1ddced;
-    padding: 5px 15px;
-    font-size: 30px;
-    color: #fff;
-    border: none;
-    margin: 0 10px;
-    border-radius: 3px;
-    box-shadow: 0 3px 0 #0eb2c1;
+    box-shadow: 0 2px 5px #000;
+    }
+    .cnt223 p{
+    clear: both;
+        color: #555555;
+        /* text-align: justify; */
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+    .cnt223 p a{
+    color: #d91900;
+    font-weight: bold;
+    }
+    .cnt223 .x{
+    float: right;
+    height: 35px;
+    left: 22px;
+    position: relative;
+    top: -25px;
+    width: 34px;
+    }
+    .cnt223 .x:hover{
     cursor: pointer;
-
-    -webkit-transition: background .2s ease;
-    -moz-transition: background .2s ease;
-    -o-transition: background .2s ease;
-}
-
-.chat-form button:hover{
-    background: #13c8d9;
-}
-
-.chat .user-photo img {
-    width: 100%;
-
-}
-
-
-.chatphoto{
-	background-image: url("./images/chatuser.png") !important;
-	background-size: cover !important;
-	xbackground: #FFF !important;
-	
-}
-
-/*--- Media Queries --*/
-@media screen and (max-width: 900px) {
-    .content{
-        padding-bottom: 30%;
-
     }
-    .content h1{
-        font-size: 450%;
-    }
-    .btn{
-        font-size: 130%;
-        padding: 9px 17px;
-    }
-
-}
-@media screen and (max-width: 768px) {
-    .content{
-        padding-bottom: 40%;
-
-    }
-    .content h1{
-        font-size: 300%;
-    }
-    .btn{
-        font-size: 110%;
-        padding: 9px 17px;
-    }
-
-}
-@media screen and (max-width: 480px) {
-    .content{
-        padding-bottom: 50%;
-
-    }
-    .content h1{
-        font-size: 250%;
-    }
-    .btn{
-        font-size: 110%;
-        padding: 6px 14px;
-    }
-	
-}
+    

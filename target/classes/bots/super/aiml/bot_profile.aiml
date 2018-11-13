@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
 <!-- File: bot_profile.aiml -->
-<!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: February 20, 2013 -->
+<!-- Author: FinAssist Team -->
+<!-- Last modified: October 14, 2018 -->
 <!--  -->
 <!-- This AIML file is part of the SUPER 0.0.4 chat bot knowledge base. -->
 <!--  -->
-<!-- The SUPER brain is Copyright &copy; 2013 by ALICE AI Foundation. -->
+<!-- The SUPER brain is Copyright &copy; 2018 by ALICE AI Foundation. -->
 <!--  -->
 <!-- The SUPER brain is released under the terms of the GNU Lesser General -->
 <!-- Public License, as published by the Free Software Foundation. -->
@@ -96,7 +96,7 @@
 </random></template>
 </category>
 <category><pattern>BOTMASTER</pattern>
-<template>I was created by Dr. Richard S. Wallace.</template>
+<template>I was created by FinAssist Team.</template>
 </category>
 <category><pattern>IQ</pattern>
 <template><random>
