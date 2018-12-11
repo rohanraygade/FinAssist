@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title> Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+
+    <nav>
+        <div class="toggle">
+
+        </div>
+
+        <ul>
+            <li><a href="#">FinAssist</a></li>
+            <li><a href="sign-in.html">Login or Sign Up</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+    </nav>
+
+
+    <div class="signupbox">
+        <img src="avatar.png" class="avatar">
+        <h1> Sign Up Here </h1>
+        <form id="sign-up" action="sign-up-complete.html">
+            <p>First Name</p>
+            <input type="text" name="fname" placeholder="Enter First Name">
+            <p>Last Name</p>
+            <input type="text" name="lname" placeholder="Enter Last Name">
+            <p>Username</p>
+            <input type="text" name="username" placeholder="Enter Username">
+            <p>Email Address</p>
+            <input type="text" name="email" placeholder="Enter Email">
+            <p>Password</p>
+            <input type="password" name="pass" placeholder="Enter Password">
+            <input type="submit" onclick="signupSubmit()" name="" value="Sign Up">
+        </form>
+    </div>
+
+
+    <script>
+        
+        function signupSubmit(){
+            document.getElementById("sign-up").submit();
+        }
+        
+    </script>
+</body>
+
+</html>

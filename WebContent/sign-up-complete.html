@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title> Login</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+        
+        <nav>
+
+            <ul>
+                <li><a href="#">FinAssist</a></li>
+                <li><a href="sign-in.html">Login or Sign Up</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                
+            </ul>
+        </nav>
+
+
+        <div class="loginbox">
+            <!-- <img src="avatar.png" class="avatar" > -->
+            <h1> Registration Successful! </h1>
+            
+            <center><img src="tick.png" width="180px" style="left:60%"></center>
+            <br><br>
+            <form id="sign-up-complete" action="sign-in.html">
+                <input type="submit" onclick="goToLogin()" name="" value="Login Now">
+            </form>
+        </div>
+
+
+        <script>
+        
+                function goToLogin(){
+                    document.getElementById("sign-up-complete").submit();
+                }
+                
+            </script>
+
+
+    </body>
+</html>
