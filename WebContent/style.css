@@ -351,7 +351,7 @@ th, td {
     border-radius: 40px;
 
   }
-  body-id {
+  #body-id {
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.5;
     color: #323232;
@@ -362,7 +362,7 @@ th, td {
     -moz-font-smoothing: antialiased;
 }
 .heading-title {
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 .text-center {
     text-align: center;
@@ -376,12 +376,12 @@ th, td {
     padding-top: 30px;
 }
 .half-txt {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     display: inline-block;
     /* line-height: 25px; */
-    color: #7e7e7e;
-    font-size:1.7rem;
+    color: #fff;
+    font-size:1.2rem;
 }
 .text-uppercase {
     text-transform: uppercase;
@@ -479,7 +479,7 @@ th, td {
 .team-title span {
     font-size: 12px;
     text-transform: uppercase;
-    color: #a5a5a5;
+    color: #fff;
     letter-spacing: 1px;
 }
 

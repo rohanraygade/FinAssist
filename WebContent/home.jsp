@@ -1,4 +1,4 @@
-<!--new UI Added-->
+<!DOCTYPE html>
  <html>
 
 <head>
@@ -60,7 +60,7 @@
         </ul>
     </nav>
 
-<!-- 
+<!--
     <div class="loginbox">
         <img src="avatar.png" class="avatar">
         <h1> Login Here </h1>
@@ -82,7 +82,7 @@
             <img src="https://maxcdn.icons8.com/windows10/PNG/16/Arrows/angle_down-16.png" title="Expand Arrow" width="16">
         </div>
         <div class="chat-body">
-            
+
 <div class="msg-insert">
 
 </div>
@@ -123,8 +123,8 @@
 			//alert("in");
 			var msg = $this.val();
 			$this.val('');
-			
-			
+
+
 			$.ajax({
 				url : "chatServlet",
 				method : "POST",
@@ -133,19 +133,19 @@
 					data : msg,
 				},
 				success : function(response) {
-					
+
 					var newChatMessage1 = document.createElement('div');
                     document.getElementsByClassName('msg-insert')[0].appendChild(newChatMessage1);
                     newChatMessage1.className = 'msg-send';
                     newChatMessage1.innerHTML = msg;
-					
-					
-					
+
+
+
                     var newChatMessage1 = document.createElement('div');
                     document.getElementsByClassName('msg-insert')[0].appendChild(newChatMessage1);
                     newChatMessage1.className = 'msg-receive';
                     newChatMessage1.innerHTML = response;
-                    
+
                     $('#innerHTML').val('');
 				},
 				error : function() {
