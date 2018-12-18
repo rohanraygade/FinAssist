@@ -8,4 +8,5 @@ Refer to below link for User Manual:
 For reading more about MultiChain and AWS EC2 refer:
 <a href="https://blog.cotten.io/deploying-a-blockchain-with-multichain-on-amazon-ec2-b288ae118b30">Deploying a blockchain with multichain on amazon ec2</a>
 <a href="https://www.multichain.com/getting-started/">Getting started with MultiChain</a>
+<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/authorizing-access-to-an-instance.html">Authorizing access to aws instance</a>
 
